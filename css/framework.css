@@ -1,3 +1,16 @@
+:root {
+  --blue-color: #0075ff;
+  --blue-alt-color: #0d69d5;
+  --orange-color: #f59e0b;
+  --green-color: #22c55e;
+  --red-color: #f44336;
+  --grey-color: #888;
+}
+/* Start width */
+.w-full{
+  width: 100%;
+}
+/* End width */
 /* Start Box */
 .d-flex {
   display: flex;
@@ -9,6 +22,9 @@
 /* Start Padding + Margin */
 .p-10 {
   padding: 10px;
+}
+.p-15{
+  padding: 15px;
 }
 .p-20 {
   padding: 20px;
@@ -45,7 +61,20 @@
 .rad-6 {
   border-radius: 6px;
 }
+.rad-10{
+  border-radius: 10px;
+}
+.b-ccc{
+  border: 1px solid #ccc;
+}
 /* End Border */
+/* Start Component */
+.between-flex{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+/* End Component */
 @media (max-width: 767px) {
   .hide-mobile {
     display: none;
