@@ -154,6 +154,9 @@
 .fs-15 {
   font-size: 15px;
 }
+.fs-16{
+  font-size: 16px;
+}
 .fs-25{
   font-size: 25px;
 }
@@ -168,11 +171,14 @@
 .rad-10 {
   border-radius: 10px;
 }
+.b-none {
+  border: none;
+}
 .b-ccc {
   border: 1px solid #ccc;
 }
-.b-none {
-  border: none;
+.bb-css{
+  border-bottom: 1px solid #ccc;
 }
 /* End Border */
 /* Start Component */
@@ -201,8 +207,5 @@
 .btn-shape {
   padding: 4px 10px;
   border-radius: 6px;
-}
-.btn-shape:hover {
-  background-color: var(--blue-alt-color);
 }
 /* End Component */
