@@ -65,6 +65,12 @@
 .p-20 {
   padding: 20px;
 }
+.pt-15 {
+  padding-top: 15px;
+}
+.pb-15 {
+  padding-bottom: 15px;
+}
 .m-0 {
   margin: 0;
 }
@@ -83,7 +89,7 @@
 .mt-20 {
   margin-top: 20px;
 }
-.mb-5{
+.mb-5 {
   margin-bottom: 5px;
 }
 .mb-10 {
@@ -127,7 +133,7 @@
 .c-green {
   color: var(--green-color);
 }
-.c-red{
+.c-red {
   color: var(--red-color);
 }
 /* End Color */
@@ -145,7 +151,7 @@
     text-align: center;
   }
 }
-.fs-13{
+.fs-13 {
   font-size: 13px;
 }
 .fs-14 {
@@ -154,10 +160,10 @@
 .fs-15 {
   font-size: 15px;
 }
-.fs-16{
+.fs-16 {
   font-size: 16px;
 }
-.fs-25{
+.fs-25 {
   font-size: 25px;
 }
 .fw-bold {
@@ -177,7 +183,7 @@
 .b-ccc {
   border: 1px solid #ccc;
 }
-.bb-css{
+.bb-css {
   border-bottom: 1px solid #ccc;
 }
 /* End Border */
