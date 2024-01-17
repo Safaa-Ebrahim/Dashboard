@@ -87,7 +87,7 @@ a {
   -webkit-transition: var(--main-transition);
   -o-transition: var(--main-transition);
   transition: var(--main-transition);
-  margin-bottom: 5px;
+  margin-bottom: 15px;
 }
 .sidebar ul li a.active,
 .sidebar ul li a:hover {
