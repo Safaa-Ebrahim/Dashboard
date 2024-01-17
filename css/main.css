@@ -394,13 +394,13 @@ a {
 }
 /* End Tasks Widget */
 /* Start Latest Uploads Widget */
-.latest-uploads ul li img{
+.latest-uploads ul li img {
   width: 40px;
   height: 40px;
 }
 /* End Latest Uploads Widget */
 /* Start Last Projects Widget */
-.last-project ul::before{
+.last-project ul::before {
   content: "";
   position: absolute;
   left: 11px;
@@ -408,7 +408,7 @@ a {
   height: 100%;
   background-color: var(--blue-color);
 }
-.last-project ul li::before{
+.last-project ul li::before {
   content: "";
   width: 20px;
   height: 20px;
@@ -420,13 +420,13 @@ a {
   margin-right: 15px;
   z-index: 1;
 }
-.last-project ul li.done::before{
+.last-project ul li.done::before {
   background-color: var(--blue-color);
 }
-.last-project ul li.current::before{
+.last-project ul li.current::before {
   animation: change-color 0.8s infinite alternate;
 }
-.last-project .lanuch-icon{
+.last-project .lanuch-icon {
   position: absolute;
   right: 0;
   bottom: 0;
@@ -434,12 +434,30 @@ a {
   opacity: 0.1;
 }
 /* End Last Projects Widget */
+/* Start Reminders Widget */
+.reminders ul li .key {
+  width: 15px;
+  height: 15px;
+}
+.reminders ul li > .blue{
+ border-left:2px solid var(--blue-color);
+}
+.reminders ul li > .green{
+ border-left:2px solid var(--green-color);
+}
+.reminders ul li > .orange{
+ border-left:2px solid var(--orange-color);
+}
+.reminders ul li > .red{
+ border-left:2px solid var(--red-color);
+}
+/* End Reminders Widget */
 /* Start Animation */
 @keyframes change-color {
-  from{
+  from {
     background-color: var(--blue-color);
   }
-  to{
+  to {
     background-color: white;
   }
 }
