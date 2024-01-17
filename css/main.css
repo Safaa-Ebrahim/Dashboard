@@ -424,6 +424,7 @@ a {
   background-color: var(--blue-color);
 }
 .last-project ul li.current::before {
+  -webkit-animation: change-color 0.8s infinite alternate;
   animation: change-color 0.8s infinite alternate;
 }
 .last-project .lanuch-icon {
@@ -469,50 +470,104 @@ a {
 .social-media .box {
   padding-left: 70px;
 }
-.social-media .box i{
+.social-media .box i {
   position: absolute;
   left: 0;
   top: 0;
   width: 52px;
+  -webkit-transition: var(--main-transition);
+  -o-transition: var(--main-transition);
   transition: var(--main-transition);
 }
-.social-media .box i:hover{
+.social-media .box i:hover {
+  -webkit-transform: rotate(5deg);
+  -ms-transform: rotate(5deg);
   transform: rotate(5deg);
 }
-.social-media .twitter{
-  background-color: rgb(29, 161, 242,.2);
+.social-media .twitter {
+  background-color: rgb(29, 161, 242, 0.2);
   color: #1da1f2;
 }
 .social-media .twitter i,
-.social-media .twitter a{
+.social-media .twitter a {
   background-color: #1da1f2;
 }
-.social-media .facebook{
-  background-color: rgb(24, 119, 242,0.2);
- color: #1877f2;
+.social-media .facebook {
+  background-color: rgb(24, 119, 242, 0.2);
+  color: #1877f2;
 }
 .social-media .facebook i,
-.social-media .facebook a{
+.social-media .facebook a {
   background-color: #1877f2;
 }
-.social-media .youtube{
-  background-color: rgb(255, 0, 0,0.2);
+.social-media .youtube {
+  background-color: rgb(255, 0, 0, 0.2);
   color: #ff0000;
 }
 .social-media .youtube i,
-.social-media .youtube a{
+.social-media .youtube a {
   background-color: #ff0000;
 }
-.social-media .linkedin{
-  background-color: rgb(10, 102, 194,0.2);
+.social-media .linkedin {
+  background-color: rgb(10, 102, 194, 0.2);
   color: #0a66c2;
 }
 .social-media .linkedin i,
-.social-media .linkedin a{
+.social-media .linkedin a {
   background-color: #0a66c2;
 }
 /* End Social Media Stats Widget */
+/* Start Project Table */
+/* End Project Table */
+.projects .responsive-table {
+  overflow-x: auto;
+}
+.projects table {
+  min-width: 950px;
+  border-spacing: 0;
+}
+.projects thead th {
+  background-color: #eee;
+  padding: 15px;
+}
+.projects table td {
+  padding: 15px;
+}
+.projects tbody td {
+  border-bottom: 1px solid #eee;
+  border-left: 1px solid #eee;
+  -webkit-transition: var(--main-transition);
+  -o-transition: var(--main-transition);
+  transition: var(--main-transition);
+}
+.projects tbody td:last-child {
+  border-right: 1px solid #eee;
+}
+.projects tbody tr:hover td {
+  background-color: #faf7f7;
+}
+.projects table img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  padding: 2px;
+  background-color: white;
+}
+.projects table img:not(:first-child) {
+  margin-left: -20px;
+}
+.projects table .label {
+  font-size: 13px;
+}
 /* Start Animation */
+@-webkit-keyframes change-color {
+  from {
+    background-color: var(--blue-color);
+  }
+  to {
+    background-color: white;
+  }
+}
 @keyframes change-color {
   from {
     background-color: var(--blue-color);
