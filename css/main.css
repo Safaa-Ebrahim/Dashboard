@@ -439,32 +439,79 @@ a {
   width: 15px;
   height: 15px;
 }
-.reminders ul li > .blue{
- border-left:2px solid var(--blue-color);
+.reminders ul li > .blue {
+  border-left: 2px solid var(--blue-color);
 }
-.reminders ul li > .green{
- border-left:2px solid var(--green-color);
+.reminders ul li > .green {
+  border-left: 2px solid var(--green-color);
 }
-.reminders ul li > .orange{
- border-left:2px solid var(--orange-color);
+.reminders ul li > .orange {
+  border-left: 2px solid var(--orange-color);
 }
-.reminders ul li > .red{
- border-left:2px solid var(--red-color);
+.reminders ul li > .red {
+  border-left: 2px solid var(--red-color);
 }
 /* End Reminders Widget */
-/* Start Latest Past */
-.latest-post .top .avatar{
+/* Start Latest Past Widget */
+.latest-post .top .avatar {
   width: 48px;
   height: 48px;
 }
-.latest-post .post-content{
+.latest-post .post-content {
   text-transform: capitalize;
   line-height: 1.8;
   border-top: 1px solid #eee;
   border-bottom: 1px solid #eee;
   min-height: 140px;
 }
-/* End Latest Past */
+/* End Latest Past Widget */
+/* Start Social Media Stats Widget */
+.social-media .box {
+  padding-left: 70px;
+}
+.social-media .box i{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 52px;
+  transition: var(--main-transition);
+}
+.social-media .box i:hover{
+  transform: rotate(5deg);
+}
+.social-media .twitter{
+  background-color: rgb(29, 161, 242,.2);
+  color: #1da1f2;
+}
+.social-media .twitter i,
+.social-media .twitter a{
+  background-color: #1da1f2;
+}
+.social-media .facebook{
+  background-color: rgb(24, 119, 242,0.2);
+ color: #1877f2;
+}
+.social-media .facebook i,
+.social-media .facebook a{
+  background-color: #1877f2;
+}
+.social-media .youtube{
+  background-color: rgb(255, 0, 0,0.2);
+  color: #ff0000;
+}
+.social-media .youtube i,
+.social-media .youtube a{
+  background-color: #ff0000;
+}
+.social-media .linkedin{
+  background-color: rgb(10, 102, 194,0.2);
+  color: #0a66c2;
+}
+.social-media .linkedin i,
+.social-media .linkedin a{
+  background-color: #0a66c2;
+}
+/* End Social Media Stats Widget */
 /* Start Animation */
 @keyframes change-color {
   from {
