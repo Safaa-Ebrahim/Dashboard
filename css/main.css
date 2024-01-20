@@ -674,6 +674,67 @@ a {
   background-color: #f0f4f8;
   color: #bbb;
 }
+.settings-page .widgets-control .control input[type="checkbox"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.settings-page .widgets-control .control label {
+  padding-left: 30px;
+  cursor: pointer;
+  position: relative;
+}
+.settings-page .widgets-control .control label::before,
+.settings-page .widgets-control .control label::after {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -9px;
+  border-radius: 4px;
+}
+.settings-page .widgets-control .control label::before {
+  content: "";
+  width: 14px;
+  height: 14px;
+  border: 2px solid var(--grey-color);
+}
+.settings-page .widgets-control .control label:hover::before {
+  border-color: var(--blue-alt-color);
+}
+.settings-page .widgets-control .control label::after {
+  font-family: var(--fa-style-family-classic);
+  content: "\f00c";
+  font-weight: 900;
+  background-color: var(--blue-color);
+  color: white;
+  width: 18px;
+  height: 18px;
+  font-size: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-transform: scale(0) rotate(360deg);
+  -ms-transform: scale(0) rotate(360deg);
+  transform: scale(0) rotate(360deg);
+  -webkit-transition: var(--main-transition);
+  -o-transition: var(--main-transition);
+  transition: var(--main-transition);
+}
+.settings-page
+  .widgets-control
+  .control
+  input[type="checkbox"]:checked
+  + label::after {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
 /* ************************ End Settings ************** */
 /* Start Animation */
 @-webkit-keyframes change-color {
