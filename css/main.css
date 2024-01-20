@@ -628,11 +628,52 @@ a {
   resize: none;
   min-height: 150px;
 }
-.settings-page .email{
+.settings-page .email {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
   width: calc(100% - 80px);
 }
-
+.settings-page .sec-box {
+  padding-bottom: 15px;
+}
+.settings-page .sec-box .button {
+  -webkit-transition: var(--main-transition);
+  -o-transition: var(--main-transition);
+  transition: var(--main-transition);
+}
+.settings-page .sec-box .button:hover {
+  background-color: var(--blue-alt-color);
+}
+.settings-page .sec-box:not(:last-of-type) {
+  border-bottom: 1px solid #eee;
+}
+.settings-page .social-boxs i {
+  width: 40px;
+  height: 40px;
+  background-color: #f6f6f6;
+  border: 1px solid #ddd;
+  border-right: none;
+  border-radius: 6px 0 0 6px;
+  -webkit-transition: var(--main-transition);
+  -o-transition: var(--main-transition);
+  transition: var(--main-transition);
+}
+.settings-page .social-boxs input {
+  height: 40px;
+  background-color: #f6f6f6;
+  border: 1px solid #ddd;
+  padding-left: 10px;
+  border-radius: 0 6px 6px 0;
+}
+.settings-page .social-boxs > div:focus-within i {
+  color: black;
+}
+.settings-page :disabled {
+  cursor: no-drop;
+  background-color: #f0f4f8;
+  color: #bbb;
+}
 /* ************************ End Settings ************** */
 /* Start Animation */
 @-webkit-keyframes change-color {
