@@ -919,6 +919,12 @@ a {
 .profile-page .skills-card ul li span:not(:last-child) {
   margin-right: 5px;
 }
+@media(max-width:767px){
+  .profile-page .skills-card ul li span:not(:last-child) {
+    margin-bottom: 5px;
+  }
+}
+
 /* End Skills */
 /* Start Activities */
 .profile-page .activites {
