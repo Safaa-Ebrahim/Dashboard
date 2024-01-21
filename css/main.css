@@ -823,6 +823,9 @@ a {
 /* ************************ Start Profile ************** */
 @media (max-width: 767px) {
   .profile-page .overview {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
   }
 }
@@ -853,8 +856,13 @@ a {
   border-radius: 6px;
 }
 .profile-page .info-box .box {
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-transition: var(--main-transition);
+  -o-transition: var(--main-transition);
   transition: var(--main-transition);
+  -webkit-column-gap: 10px;
+  -moz-column-gap: 10px;
   column-gap: 10px;
 }
 .profile-page .info-box .box:hover {
