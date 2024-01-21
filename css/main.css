@@ -223,6 +223,8 @@ a {
   width: 32px;
   height: 32px;
   margin-left: 15px;
+  border: 2px solid #eee;
+  border-radius: 50%;
 }
 /* End Header  */
 .page h1 {
@@ -734,6 +736,87 @@ a {
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
   transform: scale(1);
+}
+
+.settings-page .backup-control input[type="radio"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.settings-page .backup-control .date label {
+  padding-left: 30px;
+  cursor: pointer;
+  position: relative;
+}
+.settings-page .backup-control .date label::before,
+.settings-page .backup-control .date label::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+}
+.settings-page .backup-control .date label::before {
+  left: 0;
+  top: 50%;
+  width: 18px;
+  height: 18px;
+  border: 2px solid var(--grey-color);
+  margin-top: -11px;
+}
+.settings-page .backup-control .date label::after {
+  width: 12px;
+  height: 12px;
+  background-color: var(--blue-color);
+  left: 4.5px;
+  top: 4.5px;
+  -webkit-transition: var(--main-transition);
+  -o-transition: var(--main-transition);
+  transition: var(--main-transition);
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+}
+.settings-page .backup-control .date label:hover::before {
+  border-color: var(--blue-alt-color);
+}
+.settings-page
+  .backup-control
+  .date
+  input[type="radio"]:checked
+  + label::before {
+  border-color: var(--blue-color);
+}
+.settings-page
+  .backup-control
+  .date
+  input[type="radio"]:checked
+  + label::after {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.settings-page .backup-control .serviers {
+  border-top: 1px solid #eee;
+  padding-top: 20px;
+  gap: 5px;
+}
+@media (max-width: 767px) {
+  .settings-page .backup-control .serviers {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    gap: 0;
+  }
+}
+.settings-page .backup-control .serviers .server {
+  border: 2px solid #eee;
+  position: relative;
+}
+.settings-page .backup-control .serviers .server label {
+  cursor: pointer;
+}
+.settings-page .backup-control .serviers input[type="radio"]:checked + .server {
+  color: var(--blue-color);
+  border-color: var(--blue-color);
 }
 /* ************************ End Settings ************** */
 /* Start Animation */
