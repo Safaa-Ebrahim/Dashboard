@@ -282,11 +282,46 @@
               <label for="six">Top Search Items</label>
             </div>
           </div>
-          <div class="p-20 bg-white rad-10">
+          <div class="backup-control p-20 bg-white rad-10">
             <h2 class="mt-0 mb-10">Backup Manger</h2>
             <p class="mt-0 mb-20 c-grey fs-15">
               Control Backup Time And Loaction
             </p>
+            <div class="date d-flex align-center mb-15">
+              <input type="radio" name="time" id="daily" />
+              <label for="daily">Daily</label>
+            </div>
+            <div class="date d-flex align-center mb-15">
+              <input type="radio" name="time" id="weekly" checked/>
+              <label for="weekly">Weekly</label>
+            </div>
+            <div class="date d-flex align-center mb-15">
+              <input type="radio" name="time" id="monthly" />
+              <label for="monthly">Monthly</label>
+            </div>
+            <div class="serviers d-flex align-center text-center">
+              <input type="radio" name="serviers" id="servier-one" />
+              <div class="server mb-15 rad-10 w-full">
+                 <label class="d-block m-15" for="servier-one">
+                  <i class="fa-solid fa-server d-block mb-10"></i>
+                  Megaman
+                 </label>
+              </div>
+              <input type="radio" name="serviers" id="servier-two" checked/>
+              <div class="server mb-15 rad-10 w-full">
+                 <label class="d-block m-15" for="servier-two">
+                  <i class="fa-solid fa-server d-block mb-10"></i>
+                  Zero
+                 </label>
+              </div>
+              <input type="radio" name="serviers" id="servier-three" />
+              <div class="server mb-15 rad-10 w-full">
+                 <label class="d-block m-15" for="servier-three">
+                  <i class="fa-solid fa-server d-block mb-10"></i>
+                  Sigma
+                 </label>
+              </div>
+            </div>
           </div>
           <!-- End Setting Box -->
         </div>
