@@ -893,6 +893,40 @@ a {
   left: 62px;
 }
 
+@media (max-width: 767px) {
+  .profile-page .other-data {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+/* Start Skills */
+.profile-page .skills-card {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.profile-page .skills-card ul li {
+  padding: 15px 0;
+}
+.profile-page .skills-card ul li span {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+.profile-page .skills-card ul li span:not(:last-child) {
+  margin-right: 5px;
+}
+/* End Skills */
+/* Start Activities */
+.profile-page .activites {
+  -webkit-box-flex: 2;
+  -ms-flex-positive: 2;
+  flex-grow: 2;
+}
+/* End Activities */
 /* ************************ End Profile ************** */
 
 /* Start Animation */
