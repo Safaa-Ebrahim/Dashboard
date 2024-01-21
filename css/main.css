@@ -926,6 +926,33 @@ a {
   -ms-flex-positive: 2;
   flex-grow: 2;
 }
+.profile-page .activites .activity > img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+@media (min-width: 768px) {
+  .profile-page .activites .activity .date {
+    margin-left: auto;
+    text-align: right;
+  }
+}
+@media (max-width: 767px) {
+  .profile-page .activites .activity {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .profile-page .activites .activity > img {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+  .profile-page .activites .activity .date {
+    margin-top: 15px;
+  }
+}
 /* End Activities */
 /* ************************ End Profile ************** */
 
