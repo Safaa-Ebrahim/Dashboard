@@ -208,6 +208,9 @@
 .fw-bold {
   font-weight: bold;
 }
+.fw-normal{
+  font-weight: normal;
+}
 /* End Font */
 /* Start Border */
 .rad-6 {
