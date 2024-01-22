@@ -1095,16 +1095,18 @@ a {
   left: 20px;
   border: 2px solid white;
 }
-.courses-page .course .description{
+.courses-page .course .description {
   line-height: 1.6;
 }
-.courses-page .course .info{
+.courses-page .course .info {
   border-top: 1px solid #eee;
 }
-.courses-page .course .info .title{
+.courses-page .course .info .title {
   position: absolute;
   top: -13px;
   left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
   transform: translateX(-50%);
   height: 27px;
 }
