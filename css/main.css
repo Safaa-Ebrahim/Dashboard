@@ -1262,6 +1262,7 @@ a {
 .plans-page .plan .top {
   border: 3px solid white;
   outline: 3px solid transparent;
+  border-radius: 5px;
 }
 .plans-page .plan.green .top {
   outline-color: var(--green-color);
