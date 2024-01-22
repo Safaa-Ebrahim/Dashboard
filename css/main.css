@@ -967,6 +967,7 @@ a {
 }
 @media (max-width: 767px) {
   .projects-page {
+    -ms-grid-columns: minmax(200px, 1fr);
     grid-template-columns: minmax(200px, 1fr);
     margin-left: 10px;
     margin-right: 10px;
@@ -1009,6 +1010,8 @@ a {
   border: 2px solid white;
 }
 .projects-page .project .do {
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
   justify-content: flex-end;
   border-top: 1px solid #eee;
   padding-top: 15px;
@@ -1016,11 +1019,18 @@ a {
 }
 .projects-page .project .do span {
   margin-left: 5px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
 }
 @media (max-width: 767px) {
   .projects-page .project .do {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
   }
   .projects-page .project .do span:not(:last-child) {
@@ -1043,8 +1053,11 @@ a {
   top: 0;
   height: 100%;
 }
-@media (max-width:767px){
-  .projects-page .project .info{
+@media (max-width: 767px) {
+  .projects-page .project .info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
   }
   .projects-page .project .prog {
